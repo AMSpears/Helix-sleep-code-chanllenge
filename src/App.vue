@@ -16,7 +16,9 @@
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-
+  * {
+    background-color: #E5E5E5;
+  }
   #app {
     font-family: 'Bungee', cursive;
     -webkit-font-smoothing: antialiased;
