@@ -55,6 +55,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
   #single-product-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 35px;
 
     .product-view-container {
@@ -63,6 +65,7 @@
         justify-content: space-between;
 
         .details {
+          margin-bottom: 15px;
           &.first {
             display: flex;
           }
@@ -79,6 +82,7 @@
         flex-direction: column;
         text-align: center;
         padding:  0 20px;
+        margin: 0 40px;
 
         h1 {
           font-size: 40px;
@@ -156,4 +160,5 @@
       }
     }
   }
+
 </style>
