@@ -13,7 +13,7 @@ export default new Router({
       component: SingleProduct
     },
     {
-       path: '/thesofa',
+       path: '/the-sofa',
        name: 'singleProduct',
        component: SingleProduct
      }
