@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <Header/>
-    <SingleItem/>
+    <SingleProduct/>
   </div>
 </template>
 
 <script>
   import Header from './components/Header'
-  import SingleItem from './components/SingleItem'
+  import SingleProduct from './views/SingleProduct'
 
   export default {
     components: {
       Header,
-      SingleItem
+      SingleProduct
     }
   }
 </script>
@@ -24,8 +24,5 @@
     font-family: 'Bungee', cursive;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
   }
 </style>
