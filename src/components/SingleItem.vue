@@ -22,8 +22,10 @@
     </div>
     <div class = 'product-view-container'>
       <div id = 'product-description'>
-        <h1>The Sofa</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dui interdum, tincidunt velit sit amet.</p>
+
+       <div> <h1>The Sofa</h1></div>
+      <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dui interdum, tincidunt velit sit amet.</p></div>
+
         <div id = 'product-description-deals'>
           <p>
             Pay Now <br>
@@ -39,8 +41,8 @@
              <a href="#" class= 'cta-text'>Learn More</a>
           </p>
         </div>
-        <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button>
-        <a id  = 'save-design-link' href = '#'> Save design to continue</a>
+        <div> <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button></div>
+        <div><a id  = 'save-design-link' href = '#'> Save design to continue</a></div>
       </div>
     </div>
   </div>
@@ -78,6 +80,7 @@
         flex-direction: column;
         text-align: center;
         padding:  0 20px;
+
         h1 {
           font-size: 40px;
           color: #0547A0;
@@ -89,15 +92,15 @@
           font-size: 16px;
           font-family: 'Raleway', sans-serif;
           text-align: left;
-          margin: 0;
+          max-width: 500px
         }
 
         #product-description-deals {
           display: flex;
           justify-content: center;
-          margin: 25px 0;
+          margin: 55px 0;
+
           p {
-            // max-width: 270px;
             font-size: 25px;
             text-align: center;
             padding: 0 50px;
@@ -126,7 +129,8 @@
           color: #ffffff;
           border-radius: 6px;
           border: none;
-          padding: 14px;
+          padding: 14px 200px;
+          margin: 10px;
           font-size: 20px;
           font-family: 'Bungee', cursive;
         }
@@ -134,7 +138,9 @@
           color: #444444;
           font-size: 14px;
           font-family: 'Bungee', cursive;
-          text-decoration: underline solid #0D6EF0;
+          border-bottom: 3px solid #0D6EF0;
+          text-decoration: none;
+          margin: 10px;
         }
       }
     }
