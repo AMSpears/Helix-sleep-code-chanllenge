@@ -22,9 +22,8 @@
     </div>
     <div class = 'product-view-container'>
       <div id = 'product-description'>
-
-       <div> <h1>The Sofa</h1></div>
-      <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dui interdum, tincidunt velit sit amet.</p></div>
+        <div><h1>The Sofa</h1></div>
+        <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dui interdum, tincidunt velit sit amet.</p></div>
 
         <div id = 'product-description-deals'>
           <p>
