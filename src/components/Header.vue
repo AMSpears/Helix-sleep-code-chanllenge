@@ -23,7 +23,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 36px 37px;
+    margin-bottom: 20px;
+    margin: 35px;
 
     .links {
        a {

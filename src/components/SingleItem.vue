@@ -44,6 +44,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
   #single-product-container {
     display: flex;
+    margin: 35px;
+
     .product-view-container {
       #details-container {
         display: flex;
@@ -62,21 +64,28 @@
         }
       }
       #product-description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         padding:  0 20px;
         h1 {
           font-size: 40px;
           color: #0547A0;
+          text-align: left;
+          margin-bottom: 10px;
         }
         p {
           color: #4B4B4B;
           font-size: 16px;
           font-family: 'Raleway', sans-serif;
+          text-align: left;
+          margin: 0;
         }
 
         #product-description-deals {
           display: flex;
           justify-content: center;
-
+          margin: 25px 0;
           p {
             max-width: 211px;
             font-size: 25px;
@@ -101,6 +110,21 @@
             border-left: 2px solid #ffffff;
             height: inherit;
           }
+        }
+        #add-to-cart-btn {
+          background-color: #0D6EF0;
+          color: #ffffff;
+          border-radius: 6px;
+          border: none;
+          padding: 14px;
+          font-size: 20px;
+          font-family: 'Bungee', cursive;
+        }
+        #save-design-link {
+          color: #444444;
+          font-size: 14px;
+          font-family: 'Bungee', cursive;
+          text-decoration: underline solid #0D6EF0;
         }
       }
     }

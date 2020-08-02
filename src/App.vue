@@ -18,6 +18,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
   * {
     background-color: #E5E5E5;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
   }
   #app {
     font-family: 'Bungee', cursive;
