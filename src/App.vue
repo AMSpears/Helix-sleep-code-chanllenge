@@ -1,18 +1,15 @@
 <template>
   <div id="app">
     <Header/>
-    <SingleProduct/>
   </div>
 </template>
 
 <script>
   import Header from './components/Header'
-  import SingleProduct from './views/SingleProduct'
 
   export default {
     components: {
-      Header,
-      SingleProduct
+      Header
     }
   }
 </script>
