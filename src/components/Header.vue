@@ -32,7 +32,7 @@
         color: #4B4B4B;
         font-size: 16px;
 
-        &.router-link-exact-active {
+        &.router-link-exact-active, &:hover {
           border-bottom: 3px solid #0D6EF0;
           border-radius: 2px;
         }
