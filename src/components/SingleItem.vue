@@ -25,9 +25,19 @@
         <h1>The Sofa</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dui interdum, tincidunt velit sit amet.</p>
         <div id = 'product-description-deals'>
-          <p>Pay Now <span class= 'deal-highlight'>$1,250</span><span id ='old-price'> $1,450 </span><br> <small class= 'cta-text'>$200 OFF with code</small></p>
+          <p>
+            Pay Now <br>
+            <span class= 'deal-highlight'>$1,250</span><br>
+            <span id ='old-price'> $1,450 </span><br>
+            <small class= 'cta-text'>$200 OFF with code</small>
+          </p>
           <div id = 'divider'></div>
-          <p>Pay as low as <span class= 'deal-highlight'>$25/month</span> with Klarna <a href="#" class= 'cta-text'>Learn More</a></p>
+          <p>
+            Pay as low as <br>
+            <span class= 'deal-highlight'>$25/month</span><br>
+             with Klarna <br>
+             <a href="#" class= 'cta-text'>Learn More</a>
+          </p>
         </div>
         <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button>
         <a id  = 'save-design-link' href = '#'> Save design to continue</a>
@@ -87,7 +97,7 @@
           justify-content: center;
           margin: 25px 0;
           p {
-            max-width: 211px;
+            // max-width: 270px;
             font-size: 25px;
             text-align: center;
             padding: 0 50px;
