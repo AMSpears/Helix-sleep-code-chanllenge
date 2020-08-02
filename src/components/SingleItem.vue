@@ -128,10 +128,11 @@
           color: #ffffff;
           border-radius: 6px;
           border: none;
-          padding: 14px 200px;
+          padding: 14px;
           margin: 10px;
           font-size: 20px;
           font-family: 'Bungee', cursive;
+          width: 500px;
         }
         #save-design-link {
           color: #444444;
