@@ -23,14 +23,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 44px 20px;
+    margin: 36px 37px;
 
     .links {
        a {
-        padding: 0 24px 0 0;
+        margin: 0 24px 0 0;
         text-decoration: none;
         color: #4B4B4B;
         font-size: 16px;
+
+        &.router-link-exact-active {
+          border-bottom: 3px solid #0D6EF0;
+          border-radius: 2px;
+        }
       }
     }
   }
