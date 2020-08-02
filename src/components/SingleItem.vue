@@ -21,19 +21,16 @@
       </div>
     </div>
     <div class = 'product-view-container'>
-      <div>
+      <div id = 'product-description'>
         <h1>The Sofa</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dui interdum, tincidunt velit sit amet.</p>
-        <div>
-          <div>
-            <p>Pay Now $1,250 $1,450 $200 OFF with code</p>
-          </div>
-          <div>
-            <p>Pay as low as $25/month with Klarna <a href="#">Learn More</a></p>
-          </div>
+        <div id = 'product-description-deals'>
+          <p>Pay Now <span class= 'deal-highlight'>$1,250</span><span id ='old-price'> $1,450 </span><br> <small class= 'cta-text'>$200 OFF with code</small></p>
+          <div id = 'divider'></div>
+          <p>Pay as low as <span class= 'deal-highlight'>$25/month</span> with Klarna <a href="#" class= 'cta-text'>Learn More</a></p>
         </div>
-        <button type = 'submit'> ADD TO CART</button>
-        <a href = '#'> Save design to continue</a>
+        <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button>
+        <a id  = 'save-design-link' href = '#'> Save design to continue</a>
       </div>
     </div>
   </div>
@@ -61,6 +58,48 @@
             font-size: 17px;
             font-family: 'Raleway', sans-serif;
             margin: 0 5px;
+          }
+        }
+      }
+      #product-description {
+        padding:  0 20px;
+        h1 {
+          font-size: 40px;
+          color: #0547A0;
+        }
+        p {
+          color: #4B4B4B;
+          font-size: 16px;
+          font-family: 'Raleway', sans-serif;
+        }
+
+        #product-description-deals {
+          display: flex;
+          justify-content: center;
+
+          p {
+            max-width: 211px;
+            font-size: 25px;
+            text-align: center;
+            padding: 0 50px;
+
+            .deal-highlight {
+              font-size: 34px;
+              color:#ef0e11;
+              font-weight: bold;
+            }
+
+            #old-price {
+              text-decoration: line-through;
+            }
+            .cta-text {
+              font-size: 10px;
+              color: #4B4B4B;
+            }
+          }
+          #divider {
+            border-left: 2px solid #ffffff;
+            height: inherit;
           }
         }
       }
