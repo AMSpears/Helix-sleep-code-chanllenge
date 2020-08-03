@@ -50,12 +50,16 @@
         <div><h3>Fabric choices</h3></div>
         <div id = 'fabric-choices-container'>
           <div class = 'fabric-choices'>
-            <img src ='../assets/sofa-amber.jpg' alt = 'Amber fabric'></div>
+            <img src ='../assets/sofa-amber.jpg' alt = 'Amber fabric'>
+            <span>Amber</span>
+          </div>
           <div class = 'fabric-choices'>
             <img src ='../assets/sofa-charcoal.jpg' alt = 'Charcoal fabric'>
+            <span>Charcoal</span>
           </div>
           <div class= 'fabric-choices'>
             <img src ='../assets/sofa-red.jpg' alt = 'Red fabric'>
+            <span>Red</span>
           </div>
         </div>
        </div>

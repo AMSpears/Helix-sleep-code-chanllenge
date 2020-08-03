@@ -147,10 +147,24 @@
     display: flex;
 
     .fabric-choices {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      border: 2px solid transparent;
+
       img {
         object-fit: cover;
         width: 134px;
-        height: inherit
+        height: inherit;
+        padding: 20px 0;
+      }
+      span {
+        font-size: 14px;
+        font-family: 'Raleway',sans-serif;
+        color:#444444;
+        background-color:#E8E8E8;
+        border-radius: 6px;
+        padding: 10px;
       }
     }
   }
