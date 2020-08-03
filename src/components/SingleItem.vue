@@ -40,8 +40,8 @@
              <a href="#" class= 'cta-text'>Learn More</a>
           </p>
         </div>
-        <div> <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button></div>
-        <div><a id  = 'save-design-link' href = '#'> Save design to continue</a></div>
+        <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button>
+        <div><a id  = 'save-design-link' href = '#'> Save design for later</a></div>
       </div>
     </div>
   </div>
