@@ -27,4 +27,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  body {
+    max-width: 2000px;
+    width: auto !important;
+    width: 2000px;
+    margin: auto;
+  }
 </style>
