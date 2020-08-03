@@ -3,12 +3,13 @@
 #single-product-container {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 35px;
 
   .product-view-container {
     margin: 20px;
+    overflow: hidden;
+
     #details-container {
       display: flex;
       justify-content: space-between;
@@ -168,5 +169,15 @@
         padding: 10px;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #single-product-container {
+    flex-direction: row;
   }
 }
