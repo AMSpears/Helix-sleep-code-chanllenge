@@ -174,10 +174,11 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1120px) {
   #single-product-container {
-    .product-view-container {
+    .product-view-container:nth-child(2) {
       flex-direction: row;
+      justify-content: space-evenly;
     }
   }
 
@@ -186,7 +187,7 @@
 @media only screen and (min-width: 1200px) {
   #single-product-container {
     flex-direction: row;
-    .product-view-container {
+    .product-view-container:nth-child(2) {
       flex-direction: column;
     }
   }
