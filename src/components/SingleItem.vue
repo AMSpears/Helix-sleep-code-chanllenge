@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class = 'product-view-container'>
-      <div id = 'product-description'>
+      <div class = 'product-description'>
         <div><h1>The Sofa</h1></div>
         <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dui interdum, tincidunt velit sit amet.</p></div>
 
@@ -43,7 +43,24 @@
         <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button>
         <div><a id  = 'save-design-link' href = '#'> Save design for later</a></div>
       </div>
+      <div class = 'product-description'>
+        <div id = 'section-divider'></div>
+        <div><h2>1. Choose a fabric</h2></div>
+        <div><p>Choose your choice from fabric to leather</p></div>
+        <div><h3>Fabric choices</h3></div>
+        <div id = 'fabric-choices-container'>
+          <div class = 'fabric-choices'>
+            <img src ='../assets/sofa-amber.jpg' alt = 'Amber fabric'></div>
+          <div class = 'fabric-choices'>
+            <img src ='../assets/sofa-charcoal.jpg' alt = 'Charcoal fabric'>
+          </div>
+          <div class= 'fabric-choices'>
+            <img src ='../assets/sofa-red.jpg' alt = 'Red fabric'>
+          </div>
+        </div>
+       </div>
     </div>
+
   </div>
 </template>
 <style lang="scss" scoped src ='./style/singleItem.scss'>

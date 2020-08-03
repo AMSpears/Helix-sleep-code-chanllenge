@@ -2,6 +2,7 @@
 
 #single-product-container {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 35px;
@@ -27,7 +28,7 @@
       }
     }
 
-    #product-description {
+    .product-description {
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -38,6 +39,7 @@
         color: #0547A0;
         text-align: left;
         margin-bottom: 10px;
+        font-weight: normal;
       }
 
       p {
@@ -89,12 +91,14 @@
         margin: 10px;
         font-size: 20px;
         font-family: 'Bungee', cursive;
+        font-weight: normal;
       }
 
       #save-design-link {
         color: #444444;
         font-size: 14px;
         font-family: 'Bungee', cursive;
+        font-weight: normal;
         border-bottom: 3px solid #0D6EF0;
         text-decoration: none;
         margin: 10px;
@@ -110,11 +114,44 @@
     }
   }
 
+  h2 {
+    font-size: 16px;
+    color: #0547A0;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  h3 {
+    margin-top: 29px;
+    font-size: 16px;
+    color: #4B4B4B;
+    text-align: left;
+    font-family: 'Raleway',
+      sans-serif;
+  }
+
   #deals-details {
     display: flex;
 
     div {
       margin: 0 32px;
+    }
+  }
+
+  #section-divider {
+    width: 100%;
+    border: 2px solid #ffffff;
+    margin: 41px 0;
+  }
+  #fabric-choices-container {
+    display: flex;
+
+    .fabric-choices {
+      img {
+        object-fit: cover;
+        width: 134px;
+        height: inherit
+      }
     }
   }
 }
