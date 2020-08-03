@@ -17,7 +17,7 @@
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
   * {
-    background-color: #E5E5E5;
+    background-color: #F2F2F2;
     box-sizing: border-box;
     margin:0;
     padding:0;
