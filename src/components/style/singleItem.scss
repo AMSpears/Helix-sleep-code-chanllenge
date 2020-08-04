@@ -141,10 +141,9 @@
 
   #deals-details {
     display: flex;
-
-    div {
-      margin: 0 32px;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
 
