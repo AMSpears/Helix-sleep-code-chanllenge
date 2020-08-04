@@ -15,7 +15,7 @@
         top: 0;
         left: 0;
         opacity: 0.95;
-        overflow-x: hidden;
+        overflow: hidden;
         transition: .5s;
         background-color: #F2F2F2;
 
@@ -75,8 +75,6 @@
     }
   }
 }
-
-
 
 @media only screen and (min-width: 1024px) {
   #header-container {

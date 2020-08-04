@@ -11,7 +11,7 @@
         <router-link id = 'mobile-logo' to= "/"><img src="../assets/logo.svg"></router-link>
       </div>
       <div id = 'nav-links-overlay'>
-         <a href="#" id = 'close-btn' @click="toggleMenu">&times;</a>
+         <a href="javascript:void(0)" id = 'close-btn' @click="toggleMenu">&times;</a>
         <div id = 'nav-links' @click="toggleMenu">
           <div class = 'links'>
             <router-link to="/the-sofa"> The Sofa</router-link>
@@ -37,6 +37,7 @@ export default {
     toggleMenu() {
       const links = document.getElementById('nav-links')
       const overlay = document.getElementById('nav-links-overlay')
+
       if (window.innerWidth < 1024) {
         if (overlay.style.width === '0%') {
           overlay.style.width = '100%'
