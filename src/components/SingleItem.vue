@@ -43,8 +43,8 @@
         <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button>
         <div><a id  = 'save-design-link' href = '#'> Save design for later</a></div>
       </div>
+       <div id = 'section-divider'></div>
       <div class = 'product-description'>
-        <div id = 'section-divider'></div>
         <div><h2>1. Choose a fabric</h2></div>
         <div><p>Choose your choice from fabric to leather</p></div>
         <div><h3>Fabric choices</h3></div>

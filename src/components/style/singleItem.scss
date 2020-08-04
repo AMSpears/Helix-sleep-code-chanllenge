@@ -31,7 +31,12 @@
         }
       }
     }
-
+    #section-divider {
+      width: 100%;
+      border: 2px solid #ffffff;
+      margin: 41px 0;
+      height: inherit
+    }
     .product-description {
       display: flex;
       flex-direction: column;
@@ -142,11 +147,7 @@
     }
   }
 
-  #section-divider {
-    width: 100%;
-    border: 2px solid #ffffff;
-    margin: 41px 0;
-  }
+
   #fabric-choices-container {
     display: flex;
 
@@ -179,9 +180,12 @@
     .product-view-container:nth-child(2) {
       flex-direction: row;
       justify-content: space-evenly;
+
+      #section-divider {
+        margin: 0;
+      }
     }
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -189,6 +193,9 @@
     flex-direction: row;
     .product-view-container:nth-child(2) {
       flex-direction: column;
+      #section-divider {
+        margin: 41px 0;
+      }
     }
   }
 }
