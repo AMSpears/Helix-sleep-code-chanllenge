@@ -10,7 +10,7 @@
           <p>Ships in 5-7 Business Days</p>
         </div>
       </div>
-      <div id = 'sofa-preview'><img src = '../assets/sofa-red.jpg' alt = 'Red Sofa'></div>
+      <div id = 'sofa-preview'><img id ='preview-img' :src="getImageUrl(currColor)" v-bind:alt="currColor"></div>
       <div id = 'deals-details'>
         <div><img src = '../assets/free-shipping.svg' alt = 'Free shipping'></div>
         <div><img src = '../assets/trial.svg' alt = '365 Day Trial'></div>
@@ -49,15 +49,15 @@
         <div><p>Choose your choice from fabric to leather</p></div>
         <div><h3>Fabric choices</h3></div>
         <div id = 'fabric-choices-container'>
-          <div class = 'fabric-choices'>
+          <div class = 'fabric-choices' id  ='amber' @click="updateFabricAmber" >
             <img src ='../assets/sofa-amber.jpg' alt = 'Amber fabric'>
             <span>Amber</span>
           </div>
-          <div class = 'fabric-choices'>
+          <div class = 'fabric-choices' id = 'charcoal' @click="updateFabricCharcoal" >
             <img src ='../assets/sofa-charcoal.jpg' alt = 'Charcoal fabric'>
             <span>Charcoal</span>
           </div>
-          <div class= 'fabric-choices'>
+          <div class= 'fabric-choices' id = 'red' @click="updateFabricRed" >
             <img src ='../assets/sofa-red.jpg' alt = 'Red fabric'>
             <span>Red</span>
           </div>
@@ -67,4 +67,31 @@
 
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      currColor: 'red'
+    }
+  },
+  methods: {
+    getImageUrl(color) {
+      const images = require.context('../assets/', false, /\.jpg$/)
+      return images('./' + `sofa-${color}` + ".jpg")
+    },
+    updateFabricAmber() {
+      const amberFabric = document.getElementById('amber')
+      this.currColor = 'amber'
+    },
+    updateFabricCharcoal() {
+      const charcoalFabric = document.getElementById('charcoal')
+      this.currColor = 'charcoal'
+    },
+    updateFabricRed() {
+      const redFabric = document.getElementById('red')
+      this.currColor = 'red'
+    }
+  },
+}
+</script>
 <style lang="scss" scoped src ='./style/singleItem.scss'>
