@@ -10,7 +10,7 @@
           <p>Ships in 5-7 Business Days</p>
         </div>
       </div>
-      <div id = 'sofa-preview'><img id ='preview-img' :src="getImageUrl(currColor)" v-bind:alt="currColor"></div>
+      <div id = 'sofa-preview'><img id ='preview-img' :src="getImageUrl(currColor)" v-bind:alt="`${currColor} sofa`"></div>
       <div id = 'deals-details'>
         <div><img src = '../assets/free-shipping.svg' alt = 'Free shipping'></div>
         <div><img src = '../assets/trial.svg' alt = '365 Day Trial'></div>
@@ -49,15 +49,15 @@
         <div><p>Choose your choice from fabric to leather</p></div>
         <div><h3>Fabric choices</h3></div>
         <div id = 'fabric-choices-container'>
-          <div class = 'fabric-choices' id  ='amber' @click="updateFabricAmber" >
+          <div class = 'fabric-choices' id ='amber' @click=" updateFabricAmber(); activeFabric()">
             <img src ='../assets/sofa-amber.jpg' alt = 'Amber fabric'>
             <span>Amber</span>
           </div>
-          <div class = 'fabric-choices' id = 'charcoal' @click="updateFabricCharcoal" >
+          <div class = 'fabric-choices' id = 'charcoal' @click="updateFabricCharcoal(); activeFabric()" >
             <img src ='../assets/sofa-charcoal.jpg' alt = 'Charcoal fabric'>
             <span>Charcoal</span>
           </div>
-          <div class= 'fabric-choices' id = 'red' @click="updateFabricRed" >
+          <div class= 'fabric-choices' id = 'red' @click=" updateFabricRed(); activeFabric()" >
             <img src ='../assets/sofa-red.jpg' alt = 'Red fabric'>
             <span>Red</span>
           </div>
@@ -71,6 +71,7 @@
 export default {
   data() {
     return {
+      activeClass: 'selected-fabric',
       currColor: 'red'
     }
   },
@@ -79,16 +80,36 @@ export default {
       const images = require.context('../assets/', false, /\.jpg$/)
       return images('./' + `sofa-${color}` + ".jpg")
     },
-    updateFabricAmber() {
+    activeFabric() {
       const amberFabric = document.getElementById('amber')
+      const charcoalFabric = document.getElementById('charcoal')
+      const redFabric = document.getElementById('red')
+
+      if (this.currColor === 'amber') {
+        redFabric.classList.remove(this.activeClass)
+        charcoalFabric.classList.remove(this.activeClass)
+        amberFabric.classList.add(this.activeClass)
+      }
+
+      if (this.currColor === 'charcoal') {
+        amberFabric.classList.remove(this.activeClass)
+        redFabric.classList.remove(this.activeClass)
+        charcoalFabric.classList.add(this.activeClass)
+      }
+
+      if (this.currColor === 'red') {
+        amberFabric.classList.remove(this.activeClass)
+        charcoalFabric.classList.remove(this.activeClass)
+        redFabric.classList.add(this.activeClass)
+      }
+    },
+    updateFabricAmber() {
       this.currColor = 'amber'
     },
     updateFabricCharcoal() {
-      const charcoalFabric = document.getElementById('charcoal')
       this.currColor = 'charcoal'
     },
     updateFabricRed() {
-      const redFabric = document.getElementById('red')
       this.currColor = 'red'
     }
   },
