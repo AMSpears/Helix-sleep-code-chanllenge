@@ -57,7 +57,7 @@
             <img src ='../assets/sofa-charcoal.jpg' alt = 'Charcoal fabric'>
             <span>Charcoal</span>
           </div>
-          <div class= 'fabric-choices' id = 'red' @click=" updateFabricRed(); activeFabric()" >
+          <div class= 'fabric-choices' :class="this.activeClass" id = 'red' @click=" updateFabricRed(); activeFabric()" >
             <img src ='../assets/sofa-red.jpg' alt = 'Red fabric'>
             <span>Red</span>
           </div>
