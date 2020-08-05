@@ -2,9 +2,11 @@
 
 > A Vue.js project
 
-## Build Setup
+## Setup Instructions
 
 ``` bash
+# clone or fork this repo
+
 # install dependencies
 npm install
 
