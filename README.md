@@ -1,4 +1,4 @@
-# helix-sleep
+# Helix Sleep - Code Challenge
 
 > A Vue.js project
 
