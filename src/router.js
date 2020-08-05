@@ -4,10 +4,18 @@ import SingleProduct from './views/SingleProduct'
 
 Vue.use(Router)
 
-const aboutUs = {template: '<div>About Us page coming soon!</div>'}
-const reviews = {template: '<div>Reviews page coming soon!</div>'}
-const showroom = {template: '<div>Showroom page coming soon!</div>'}
-const swatches = {template: '<div>Swatches page coming soon!</div>'}
+const aboutUs = {
+  template: '<div style ="margin: 100px; color:#0D6EF0;">About Us page coming soon!</div>'
+}
+const reviews = {
+  template: '<div style ="margin: 100px; color:#0D6EF0;">Reviews page coming soon!</div>'
+}
+const showroom = {
+  template: '<div style ="margin: 100px; color:#0D6EF0;">Showroom page coming soon!</div>'
+}
+const swatches = {
+  template: '<div style ="margin: 100px; color:#0D6EF0;">Swatches page coming soon!</div>'
+}
 
 export default new Router({
   routes: [
