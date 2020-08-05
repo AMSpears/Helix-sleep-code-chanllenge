@@ -9,7 +9,7 @@
 
       #nav-links-overlay {
         height: 100%;
-        width: 0%;
+        width: 0;
         position: fixed;
         z-index: 2000;
         top: 0;
@@ -27,10 +27,11 @@
           top: 0px;
           left: 20px;
           font-family: 'raleway', sans-serif;
+          cursor: pointer;
         }
 
         #nav-links {
-          display: none;
+          display: flex;
           flex-direction: column;
           text-align: center;
           position: relative;
@@ -43,7 +44,6 @@
               font-size: 32px;
               display: block;
               padding: 20px;
-
 
               &.router-link-exact-active {
                 color: #0D6EF0;
@@ -64,6 +64,7 @@
       top: 30px;
       left: 0;
       background-color: transparent;
+      cursor: pointer;
 
       div {
         width: 50px;
@@ -83,6 +84,7 @@
         display: none;
       }
       #nav-links-overlay {
+        width: 100% !important;
         #close-btn {
           display: none;
         }

@@ -41,9 +41,7 @@ export default {
       if (window.innerWidth < 1024) {
         if (overlay.style.width === '0%') {
           overlay.style.width = '100%'
-          links.style.display = 'flex'
         } else {
-          links.style.display = 'none'
           overlay.style.width = '0%'
         }
       }
