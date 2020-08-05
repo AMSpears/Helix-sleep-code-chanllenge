@@ -4,7 +4,7 @@
       <div id = 'details-container'>
         <div class = 'details first'>
           <img src = '../assets/padlock.svg' alt = 'padlock'>
-          <p>Secure checkout</p>
+          <p>Secure Checkout</p>
         </div>
         <div class = 'details'>
           <p>Ships in 5-7 Business Days</p>
