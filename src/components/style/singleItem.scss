@@ -100,6 +100,7 @@
         font-size: 20px;
         font-family: 'Bungee', cursive;
         font-weight: normal;
+        cursor: pointer;
       }
 
       #save-design-link {
@@ -107,9 +108,10 @@
         font-size: 14px;
         font-family: 'Bungee', cursive;
         font-weight: normal;
-        border-bottom: 3px solid #0D6EF0;
         text-decoration: none;
         margin: 10px;
+        border-bottom: 3px solid #0D6EF0;
+        cursor: pointer;
       }
     }
   }

@@ -41,7 +41,7 @@
           </p>
         </div>
         <button id = 'add-to-cart-btn' type = 'submit' @click="addToCart"> {{addToCartMsg}}</button>
-        <div><a id  = 'save-design-link' href = '#'> Save design for later</a></div>
+        <div @click="saveDesign"><a id  = 'save-design-link' href="#"> {{saveDesignMsg}}</a></div>
       </div>
        <div id = 'section-divider'></div>
       <div class = 'product-description'>
@@ -72,7 +72,8 @@ export default {
     return {
       activeClass: 'selected-fabric',
       currColor: 'red',
-      addToCartMsg: 'add to cart'
+      addToCartMsg: 'add to cart',
+      saveDesignMsg: 'Save design for later'
     }
   },
   methods: {
@@ -113,9 +114,21 @@ export default {
       this.currColor = 'red'
     },
     addToCart() {
+      const addToCartBtn = document.getElementById('add-to-cart-btn')
       this.addToCartMsg = 'added to cart'
+      addToCartBtn.style.opacity = '0.6'
       setTimeout(() => {
         this.addToCartMsg  = 'add to cart'
+        addToCartBtn.style.opacity = '1'
+      }, 1000);
+    },
+    saveDesign(){
+      const saveDesignLink = document.getElementById('save-design-link')
+      this.saveDesignMsg = 'Saved for later'
+      saveDesignLink.style.opacity = '0.6'
+      setTimeout(() => {
+        this.saveDesignMsg  = 'Save design for later'
+        saveDesignLink.style.opacity = '1'
       }, 1000);
     }
   },
