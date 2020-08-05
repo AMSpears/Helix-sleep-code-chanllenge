@@ -40,7 +40,7 @@
              <a href="#" class= 'cta-text'>Learn More</a>
           </p>
         </div>
-        <button id = 'add-to-cart-btn' type = 'submit'> ADD TO CART</button>
+        <button id = 'add-to-cart-btn' type = 'submit' @click="addToCart"> {{addToCartMsg}}</button>
         <div><a id  = 'save-design-link' href = '#'> Save design for later</a></div>
       </div>
        <div id = 'section-divider'></div>
@@ -64,7 +64,6 @@
         </div>
        </div>
     </div>
-
   </div>
 </template>
 <script>
@@ -72,7 +71,8 @@ export default {
   data() {
     return {
       activeClass: 'selected-fabric',
-      currColor: 'red'
+      currColor: 'red',
+      addToCartMsg: 'add to cart'
     }
   },
   methods: {
@@ -111,6 +111,12 @@ export default {
     },
     updateFabricRed() {
       this.currColor = 'red'
+    },
+    addToCart() {
+      this.addToCartMsg = 'added to cart'
+      setTimeout(() => {
+        this.addToCartMsg  = 'add to cart'
+      }, 1000);
     }
   },
 }
