@@ -41,7 +41,7 @@
           </p>
         </div>
         <button id = 'add-to-cart-btn' type = 'submit' @click="addToCart"> {{addToCartMsg}}</button>
-        <div @click="saveDesign"><a id  = 'save-design-link' href="#"> {{saveDesignMsg}}</a></div>
+        <div @click="saveDesign"><a id  = 'save-design-link' href="javascript:void(0)"> {{saveDesignMsg}}</a></div>
       </div>
        <div id = 'section-divider'></div>
       <div class = 'product-description'>
